@@ -1,52 +1,72 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import { siteTitle } from './layout.js'
-import IconLinks from './iconlinks.js'
+import Link from 'next/link';
+import Head from 'next/head';
+import IconLinks from './iconlinks.js';
+import { siteTitle } from './layout.js';
+import { useState } from 'react';
 
 export default function Header() {
+  const [active, setActive] = useState(false);
+  const handleClick = () => {
+      setActive(!active);
+  };
+
   return (
       <>
-          <Head>
-              <script defer src="https://kit.fontawesome.com/7d1c7e7747.js"></script>
-          </Head>
-          <nav className="flex items-center justify-between flex-wrap bg-teal p-6">
-            <div className="flex items-center flex-no-shrink text-black mr-6">
-                <a className="px-1 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="https://www.facebook.com/Linnea.olofsson13">
-                  <i className="fas fa-angle-double-right text-lg leading-lg text-black opacity-75"></i>
+        <Head>
+          <script defer src="https://kit.fontawesome.com/7d1c7e7747.js"></script>
+        </Head>
+        <nav className='flex items-center flex-wrap bg-green-400 p-3 '>
+          <Link href='/'>
+            <a className='px-1 py-2 inline-flex items-center p-2 mr-4'>
+              <i aria-hidden className="pr-2 fas fa-angle-double-right text-lg leading-lg text-black opacity-75"></i>
+              <span className='text-xl text-white font-semibold tracking-wide'>
+                Linnéa olofsson
+              </span>
+            </a>
+          </Link>
+          <button
+            className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+            onClick={handleClick}
+          >
+            <svg
+              className='w-6 h-6'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M4 6h16M4 12h16M4 18h16'
+              />
+            </svg>
+          </button>
+          {/*Note that in this div uses a ternary operator to decide whether or not to display the content of the div  */}
+          <div className={`${
+              active ? '' : 'hidden'
+              } w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+          >
+            <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
+              <Link href='/'>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                Home
                 </a>
-              <span className="font-semibold text-xl tracking-tight">Linnéa Olofsson</span>
+              </Link>
+              <Link href='/about'>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                About
+                </a>
+              </Link>
+              <Link href='/contact'>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                Contact
+                </a>
+              </Link>
             </div>
-            <div className="block lg:hidden">
-              <button className="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
-                <svg className="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>{siteTitle}</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-              </button>
-            </div>
-            <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-              <div className="text-sm lg:flex-grow">
-                  <Link href="/">
-                      <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:opacity-75 mr-4">
-                        Home
-                      </a>
-                  </Link>
-                  <Link href="/portfolio">
-                      <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:opacity-75 mr-4">
-                        Portfolio
-                      </a>
-                  </Link>
-                  <Link href="/about">
-                      <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:opacity-75 mr-4">
-                        About
-                      </a>
-                  </Link>
-                  <Link href="/contact">
-                      <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:opacity-75 mr-4">
-                        Contact
-                      </a>
-                  </Link>
-              </div>
-              <IconLinks></IconLinks>
-            </div>
-          </nav>
+          </div>
+        </nav>
       </>
-  )
-}
+  );
+};

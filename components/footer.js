@@ -3,10 +3,10 @@ import { siteTitle } from './layout.js'
 
 export default function Footer() {
   return (
-      <section className="bg-white py-8 w-full">
+      <footer className="bg-white py-8 w-full">
           <div className="container mx-auto px-8">
-              <div className="table w-full">
-                  <div className="block sm:table-cell">
+              <div className="w-full flex justify-around">
+                  <div className=" sm:table-cell">
                       <p className="uppercase text-grey text-sm sm:mb-6">Links</p>
                       <ul className="list-reset text-xs mb-6">
                           <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
@@ -20,7 +20,7 @@ export default function Footer() {
                           </li>
                       </ul>
                   </div>
-                  <div className="block sm:table-cell">
+                  <div className=" sm:table-cell">
                       <p className="uppercase text-grey text-sm sm:mb-6">Legal</p>
                       <ul className="list-reset text-xs mb-6">
                           <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
@@ -31,7 +31,7 @@ export default function Footer() {
                           </li>
                       </ul>
                   </div>
-                  <div className="block sm:table-cell">
+                  <div className=" sm:table-cell">
                       <p className="uppercase text-grey text-sm sm:mb-6">Social</p>
                       <ul className="list-reset text-xs mb-6">
                           <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
@@ -45,7 +45,7 @@ export default function Footer() {
                           </li>
                       </ul>
                   </div>
-                  <div className="block sm:table-cell">
+                  <div className=" sm:table-cell">
                       <p className="uppercase text-grey text-sm sm:mb-6">Company</p>
                       <ul className="list-reset text-xs mb-6">
                           <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
@@ -61,6 +61,6 @@ export default function Footer() {
                   </div>
               </div>
           </div>
-      </section>
+      </footer>
   )
 }
