@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { siteTitle } from './layout.js'
+import { facebook, github, linkedin, messenger } from './iconlinks.js'
 
 export default function Footer() {
   return (
@@ -21,44 +22,29 @@ export default function Footer() {
                       </ul>
                   </div>
                   <div className=" sm:table-cell">
-                      <p className="uppercase text-grey text-sm sm:mb-6">Legal</p>
+                      <p className="uppercase text-grey text-sm sm:mb-6">Contact me</p>
                       <ul className="list-reset text-xs mb-6">
                           <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                              <a href="#" className="text-grey hover:text-grey-dark">Terms</a>
+                            {facebook()}
                           </li>
                           <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                              <a href="#" className="text-grey hover:text-grey-dark">Privacy</a>
+                                {linkedin()}
+                          </li>
+                          <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                            {github()}
+                          </li>
+                          <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                            {messenger()}
                           </li>
                       </ul>
                   </div>
-                  <div className=" sm:table-cell">
-                      <p className="uppercase text-grey text-sm sm:mb-6">Social</p>
-                      <ul className="list-reset text-xs mb-6">
-                          <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                              <a href="#" className="text-grey hover:text-grey-dark">Facebook</a>
-                          </li>
-                          <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                              <a href="#" className="text-grey hover:text-grey-dark">Linkedin</a>
-                          </li>
-                          <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                              <a href="#" className="text-grey hover:text-grey-dark">Twitter</a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div className=" sm:table-cell">
-                      <p className="uppercase text-grey text-sm sm:mb-6">Company</p>
-                      <ul className="list-reset text-xs mb-6">
-                          <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                              <a href="#" className="text-grey hover:text-grey-dark">Official Blog</a>
-                          </li>
-                          <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                              <a href="#" className="text-grey hover:text-grey-dark">About Us</a>
-                          </li>
-                          <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                              <a href="#" className="text-grey hover:text-grey-dark">Contact</a>
-                          </li>
-                      </ul>
-                  </div>
+              </div>
+              <div className="flex justify-center pb-2 pt-1">
+                  <a href="/" className="px-4 text-grey hover:opacity-60">Home</a>
+                  <p>|</p>
+                  <a href="/about" className="px-4 text-grey hover:opacity-60">About</a>
+                  <p>|</p>
+                  <a href="/contact" className="px-4 text-grey hover:opacity-60">Contact</a>
               </div>
           </div>
       </footer>
