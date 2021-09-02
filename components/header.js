@@ -18,7 +18,7 @@ export default function Header() {
         <nav className='flex items-center flex-wrap bg-green-400 p-3 '>
           <Link href='/'>
             <a className='px-1 py-2 inline-flex items-center p-2 mr-4'>
-              <i aria-hidden className="pr-2 fas fa-angle-double-right text-lg leading-lg text-black opacity-75"></i>
+              <i aria-hidden className="pr-2 fas fa-angle-double-right text-lg leading-lg text-white opacity-75"></i>
               <span className='text-xl text-white font-semibold tracking-wide'>
                 Linnéa olofsson
               </span>
@@ -68,5 +68,5 @@ export default function Header() {
           </div>
         </nav>
       </>
-  );
-};
+  )
+}

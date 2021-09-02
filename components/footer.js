@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { siteTitle } from './layout.js'
-import { facebook, github, linkedin, messenger } from './iconlinks.js'
+import { github, linkedin, messenger } from './iconlinks.js'
 
 export default function Footer() {
   return (
@@ -25,10 +25,7 @@ export default function Footer() {
                       <p className="uppercase text-grey text-sm sm:mb-6">Contact me</p>
                       <ul className="list-reset text-xs mb-6">
                           <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                            {facebook()}
-                          </li>
-                          <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                                {linkedin()}
+                            {linkedin()}
                           </li>
                           <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
                             {github()}
@@ -45,6 +42,17 @@ export default function Footer() {
                   <a href="/about" className="px-4 text-grey hover:opacity-60">About</a>
                   <p>|</p>
                   <a href="/contact" className="px-4 text-grey hover:opacity-60">Contact</a>
+              </div>
+              <div className="flex justify-center pt-4  text-center">
+                <div>
+                  <p className="text-xs">
+                    This site is created with
+                    <a href="https://nextjs.org/docs"> NextJS </a>
+                     and
+                    <a href="https://tailwindcss.com/docs"> TailwindCSS </a>
+                  </p>
+                  <p className="text-xs">Linnéa Olofsson 2021</p>
+                </div>
               </div>
           </div>
       </footer>
