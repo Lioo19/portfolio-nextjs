@@ -8,7 +8,7 @@ function messenger() {
       <Head>
         <script defer src="https://kit.fontawesome.com/7d1c7e7747.js"></script>
       </Head>
-      <a className="pr-3 py-2 text-xs leading-snug text-black hover:opacity-75" href="https://www.facebook.com/Linnea.olofsson13">
+      <a className="pr-3 pb-1 text-xs leading-snug text-black hover:opacity-75" href="https://www.facebook.com/Linnea.olofsson13">
         <i aria-hidden className="fab fa-facebook-messenger pr-2 text-lg leading-lg text-black opacity-75"></i> Messenger
       </a>
     </>
@@ -21,7 +21,7 @@ function github() {
       <Head>
         <script defer src="https://kit.fontawesome.com/7d1c7e7747.js"></script>
       </Head>
-      <a className="pr-3 py-2 text-xs leading-snug text-black hover:opacity-75" href="https://github.com/Lioo19">
+      <a className="pr-3 pb-1 text-xs leading-snug text-black hover:opacity-75" href="https://github.com/Lioo19">
         <i aria-hidden className="fab fa-github pr-2 text-lg leading-lg text-black opacity-75"></i> Github
       </a>
     </>
@@ -34,7 +34,7 @@ function linkedin() {
       <Head>
         <script defer src="https://kit.fontawesome.com/7d1c7e7747.js"></script>
       </Head>
-      <a className="pr-3 py-2 text-xs leading-snug text-black hover:opacity-75" href="https://www.linkedin.com/in/linnea-olofsson-web-developer/">
+      <a className="pr-3 pb-1 text-xs leading-snug text-black hover:opacity-75" href="https://www.linkedin.com/in/linnea-olofsson-web-developer/">
         <i aria-hidden className="fab fa-linkedin pr-2 text-lg leading-lg text-black opacity-75"></i> LinkedIn
       </a>
     </>
