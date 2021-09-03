@@ -3,9 +3,10 @@ import Head from 'next/head'
 import { useState } from 'react'
 
 export default function contactForm() {
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const [name, setName]           = useState('')
+    const [email, setEmail]         = useState('')
+    const [message, setMessage]     = useState('')
+    const [failed, setFailed]       = useState('')
     const [submitted, setSubmitted] = useState('')
 
     const handleSubmit = (e) => {
@@ -33,6 +34,9 @@ export default function contactForm() {
                 setName('')
                 setEmail('')
                 setMessage('')
+            } else {
+                console.log("Response received but status 200 missing")
+                setFailed(true)
             }
         })
     }
@@ -40,7 +44,9 @@ export default function contactForm() {
     return (
     <form className="mt-8 w-full max-w-lg">
       <div className="flex flex-wrap -mx-3 mb-6">
-        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <div className={`${
+            submitted ? 'hidden' : ''
+            } w-full md:w-1/2 px-3 mb-6 md:mb-0`}>
           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="grid-name">
           Name
           </label>
@@ -53,7 +59,9 @@ export default function contactForm() {
             required
           />
         </div>
-        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <div className={`${
+            submitted ? 'hidden' : ''
+            } w-full md:w-1/2 px-3 mb-6 md:mb-0`}>
           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="grid-email">
           Email
           </label>
@@ -66,7 +74,9 @@ export default function contactForm() {
             required
           />
         </div>
-        <div className="w-full md:w-1/1 px-3 mb-6 md:mb-0">
+        <div className={`${
+            submitted ? 'hidden' : ''
+            } w-full md:w-1/1 px-3 mb-6 md:mb-0`}>
           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="grid-message">
           Message
           </label>
@@ -81,12 +91,26 @@ export default function contactForm() {
         </div>
       </div>
       <button
-        className="bg-yellow-400 text-gray-900 px-4 py-2 font-medium sm:text-lg rounded-tr rounded-br"
+        className={`${
+            submitted ? 'hidden' : ''
+        } bg-yellow-400 text-gray-900 px-4 py-2 font-medium sm:text-lg rounded-tr rounded-br`}
         onClick={(e) => {handleSubmit(e)}}
         type="submit"
         >
         Send
       </button>
+      <div className={`${
+          submitted ? '' : 'hidden'
+      } w-full md:w-1/1 mb-6 md:mb-0 text-yellow-400`}>
+      <h5 className="font-bold text-xl"> Message successfully sent.</h5>
+      <i>Happy to hear from you!</i>
+      </div>
+      <div className={`${
+          failed ? '' : 'hidden'
+      } w-full md:w-1/1 mb-6 md:mb-0 text-yellow-400`}>
+      <h5 className="font-bold text-xl">Ooops, something went wrong.</h5>
+      <i>Please reload the page and try again.</i>
+      </div>
     </form>
   )
 }

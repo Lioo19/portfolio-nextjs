@@ -25,8 +25,8 @@ export default function (req, res) {
                   Message: ${req.body.message}
               </div>
               <div>
-                  Sent from: ${req.body.email}
-                  Sent by: ${req.body.name}
+                  <p>Sent from: ${req.body.email}</p>
+                  <p>Sent by: ${req.body.name}</p>
               </div>`
     }
 
@@ -38,5 +38,5 @@ export default function (req, res) {
         }
     })
 
-    res.status(200)
+    res.status(200).json({ name: "in the game" })
 }

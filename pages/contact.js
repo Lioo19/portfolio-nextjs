@@ -24,7 +24,7 @@ export default function Contact() {
                 <h1 className="text-center text-3xl uppercase sm:text-4xl text-yellow-400 font-extrabold sm:leading-[1rem]">
                  contact me
                 </h1>
-                  <p className="mt-6 text-lg sm:text-xl">
+                  <p className="mt-6 text-lg sm:text-xl text-white">
                     Want to send me a message? Feel free to use the form below!
                   </p>
                 <ContactForm></ContactForm>
