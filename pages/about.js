@@ -18,7 +18,7 @@ export default function AboutMe() {
                 className="float-left"
                 height={1500}
                 width={1103}
-                alt={name}
+                alt="hej"
               />
             </>
           </section>
