@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="container mx-auto px-8">
               <div className="w-full flex justify-around">
                   <div className=" sm:table-cell">
-                      <p className="uppercase text-grey text-sm sm:mb-4">Links</p>
+                      <p className="uppercase text-grey text-m sm:mb-4">Links</p>
                       <ul className="list-reset text-xs mb-6">
                           <li className="mt-3 inline-block mr-2 sm:block sm:mr-0">
                               <a href="#" className="text-grey hover:text-grey-dark">FAQ</a>
@@ -22,7 +22,7 @@ export default function Footer() {
                       </ul>
                   </div>
                   <div className=" sm:table-cell">
-                      <p className="uppercase text-grey text-sm sm:mb-4">Page Content</p>
+                      <p className="uppercase text-grey text-m sm:mb-4">Page Content</p>
                       <ul className="list-reset text-xs mb-6">
                           <li className="mt-3 inline-block mr-2 sm:block sm:mr-0">
                               <a href="/" className="text-grey hover:opacity-60">Home</a>
@@ -36,7 +36,7 @@ export default function Footer() {
                       </ul>
                   </div>
                   <div className=" sm:table-cell">
-                      <p className="uppercase text-grey text-sm sm:mb-4">Contact me</p>
+                      <p className="uppercase text-grey text-m sm:mb-4">Contact me</p>
                       <ul className="list-reset text-xs mb-6">
                           <li className="mt-1 inline-block mr-1 sm:block sm:mr-0">
                             {linkedin()}
@@ -54,9 +54,9 @@ export default function Footer() {
                 <div>
                   <p className="text-xs">
                     This site is created with
-                    <a href="https://nextjs.org/docs"> NextJS </a>
+                    <a href="https://nextjs.org/docs" className="text-yellow-500"> NextJS </a>
                      and
-                    <a href="https://tailwindcss.com/docs"> TailwindCSS </a>
+                    <a href="https://tailwindcss.com/docs" className="text-yellow-500"> TailwindCSS </a>
                   </p>
                   <p className="text-xs">Linnéa Olofsson 2021</p>
                 </div>

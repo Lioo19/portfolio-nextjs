@@ -3,21 +3,21 @@ import Head from 'next/head'
 import { useState } from 'react'
 
 export default function contactForm() {
-    const [name, setName]           = useState('')
-    const [email, setEmail]         = useState('')
-    const [message, setMessage]     = useState('')
-    const [failed, setFailed]       = useState('')
-    const [submitted, setSubmitted] = useState('')
+    const [name, setName]           = useState('');
+    const [email, setEmail]         = useState('');
+    const [message, setMessage]     = useState('');
+    const [failed, setFailed]       = useState('');
+    const [submitted, setSubmitted] = useState('');
 
     const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log('Sending message')
+        e.preventDefault();
+        console.log('Sending message');
 
         let data = {
             name,
             email,
             message
-        }
+        };
 
         fetch('/api/contact', {
             method: 'POST',
@@ -38,8 +38,8 @@ export default function contactForm() {
                 console.log("Response received but status 200 missing")
                 setFailed(true)
             }
-        })
-    }
+        });
+    };
 
     return (
     <form className="mt-8 w-full max-w-lg">

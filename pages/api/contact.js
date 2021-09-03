@@ -1,11 +1,11 @@
 
 export default function (req, res) {
-    require('dotenv').config()
-    const password = process.env.password
-    const personalmail = process.env.personalmail
-    const burnermail = process.env.burnermail
+    require('dotenv').config();
+    const password = process.env.password;
+    const personalmail = process.env.personalmail;
+    const burnermail = process.env.burnermail;
 
-    let nodemailer = require('nodemailer')
+    let nodemailer = require('nodemailer');
     const transporter = nodemailer.createTransport({
         port: 465,
         host: "smtp.gmail.com",
@@ -14,7 +14,7 @@ export default function (req, res) {
             pass: password,
         },
         secure: true,
-    })
+    });
 
     const mailData = {
         from: burnermail,
@@ -28,7 +28,7 @@ export default function (req, res) {
                   <p>Sent from: ${req.body.email}</p>
                   <p>Sent by: ${req.body.name}</p>
               </div>`
-    }
+    };
 
     transporter.sendMail(mailData, function (err, info) {
         if(err)
@@ -36,7 +36,7 @@ export default function (req, res) {
         else {
             console.log(info)
         }
-    })
+    });
 
-    res.status(200).json({ name: "in the game" })
+    res.status(200).json({ name: "in the game" });
 }

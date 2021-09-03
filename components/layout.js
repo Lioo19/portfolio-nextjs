@@ -6,14 +6,14 @@ import Link from 'next/link'
 import Header from './header'
 import Footer from './footer'
 
-const name = 'Linnéa'
-export const siteTitle = 'Linnéa Olofsson, Developer'
+const name = 'Linnéa';
+export const siteTitle = 'Linnéa Olofsson, Developer';
 
 export default function Layout({ children, home }) {
   return (
     <>
       <Header></Header>
-      <div className={styles.container}>
+      <div className="">
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -29,25 +29,7 @@ export default function Layout({ children, home }) {
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
-        <header className={styles.header}>
-          {home ? (
-            <>
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={144}
-                width={144}
-                alt={name}
-              />
-              <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            </>
-          ) : (
-            <>
-            </>
-          )}
-        </header>
-        <main>{children}</main>
+        <main className="w-1/1">{children}</main>
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">

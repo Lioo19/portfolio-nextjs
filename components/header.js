@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import Head from 'next/head';
-import IconLinks from './iconlinks.js';
-import { siteTitle } from './layout.js';
-import { useState } from 'react';
+import Link from 'next/link'
+import Head from 'next/head'
+import IconLinks from './iconlinks.js'
+import { siteTitle } from './layout.js'
+import { useState } from 'react'
 
 export default function Header() {
   const [active, setActive] = useState(false);
@@ -15,17 +15,17 @@ export default function Header() {
         <Head>
           <script defer src="https://kit.fontawesome.com/7d1c7e7747.js"></script>
         </Head>
-        <nav className='flex items-center flex-wrap bg-green-400 p-3 '>
+        <nav className='flex items-center flex-wrap bg-white-400 text-yellow-400 px-3 py-2'>
           <Link href='/'>
             <a className='px-1 py-2 inline-flex items-center p-2 mr-4'>
-              <i aria-hidden className="pr-2 fas fa-angle-double-right text-lg leading-lg text-white opacity-75"></i>
-              <span className='text-xl text-white font-semibold tracking-wide'>
+              <i aria-hidden className="pr-2 fas fa-angle-double-right text-lg leading-lg text-yellow-400 opacity-75"></i>
+              <span className='text-xl font-semibold tracking-wide'>
                 Linnéa olofsson
               </span>
             </a>
           </Link>
           <button
-            className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+            className=' inline-flex p-3 lg:hidden rounded ml-auto hover:opacity-90 outline-none'
             onClick={handleClick}
           >
             <svg
@@ -50,17 +50,17 @@ export default function Header() {
           >
             <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
               <Link href='/'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                <a className='transition duration-500 ease-in-out lg:inline-flex lg:w-auto w-full px-3 py-2 font-bold items-center justify-center transform hover:-translate-y-1 hover:scale-110'>
                 Home
                 </a>
               </Link>
               <Link href='/about'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                <a className='transition duration-500 ease-in-out lg:inline-flex lg:w-auto w-full px-3 py-2 font-bold items-center justify-center transform hover:-translate-y-1 hover:scale-110'>
                 About
                 </a>
               </Link>
               <Link href='/contact'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                <a className='transition duration-500 ease-in-out lg:inline-flex lg:w-auto w-full px-3 py-2 font-bold items-center justify-center transform hover:-translate-y-1 hover:scale-110'>
                 Contact
                 </a>
               </Link>
