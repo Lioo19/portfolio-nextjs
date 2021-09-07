@@ -12,7 +12,7 @@ export default function AboutMe() {
           </Head>
           <div className="relative h-screen w-screen">
             <div className="flex justify-center items-center flex-col pt-8 sm:flex-row">
-              <section className="pr-8">
+              <section className="px-4">
                 <>
                   <a href="/images/tradgard2flipped.png">
                     <Image
@@ -27,7 +27,7 @@ export default function AboutMe() {
                   </a>
                 </>
               </section>
-              <section className="p-6">
+              <section className="p-4">
                 <div className="w-1/1 flex flex-col bg-yellow-100 px-10 py-14">
                   <div className="max-w-xs">
                     <h1 className="text-3xl pb-2">About Me</h1>
