@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Header from './header'
@@ -29,15 +28,18 @@ export default function Layout({ children, home }) {
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
-        <main className="w-1/1">{children}</main>
+        {/*Main-component with relative screen size as default*/}
+        <main className="relative h-screen w-screen">{children}</main>
+        {/* If not at homepage, display back to home-link*/}
         {!home && (
-          <div className={styles.backToHome}>
+          <div className="my-4 ml-14">
             <Link href="/">
               <a>← Back to home</a>
             </Link>
           </div>
         )}
       </div>
+      {/*Always include footer*/}
     <Footer>
     </Footer>
     </>

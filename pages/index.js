@@ -21,7 +21,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className="bg-gray-600 h-1/1 p-10">
+      <div className="relative h-screen w-screen bg-gray-600 p-10">
         <section className="h-1/1 bg-white bg-opacity-50 flex-row items-center text-center">
           <h1 className="pt-16 pb-1 text-4xl font-bold opacity-75">Linnéa Olofsson</h1>
           <h1 className="pb-10 pt-1 text-8xl font-bold text-yellow-400 opacity-75">Developer</h1>

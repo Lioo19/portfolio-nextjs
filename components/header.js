@@ -43,7 +43,7 @@ export default function Header() {
               />
             </svg>
           </button>
-          {/*Note that in this div uses a ternary operator to decide whether or not to display the content of the div  */}
+          {/*Note that in this div uses a ternary operator to decide whether or not to display the content of the div */}
           <div className={`${
               active ? '' : 'hidden'
               } w-full lg:inline-flex lg:flex-grow lg:w-auto`}
@@ -57,6 +57,11 @@ export default function Header() {
               <Link href='/about'>
                 <a className='transition duration-500 ease-in-out lg:inline-flex lg:w-auto w-full px-3 py-2 font-bold items-center justify-center transform hover:-translate-y-1 hover:scale-110'>
                 About
+                </a>
+              </Link>
+              <Link href='/portfolio'>
+                <a className='transition duration-500 ease-in-out lg:inline-flex lg:w-auto w-full px-3 py-2 font-bold items-center justify-center transform hover:-translate-y-1 hover:scale-110'>
+                Portfolio
                 </a>
               </Link>
               <Link href='/contact'>
