@@ -9,19 +9,26 @@ export default function AboutMe() {
           <Head>
               <title>About Me</title>
           </Head>
-          <h1>About Me</h1>
-          <section>
-            <>
-              <Image
-                priority
-                src="/images/tradgard2flipped.png"
-                className="float-left"
-                height={1500}
-                width={1103}
-                alt="hej"
-              />
-            </>
-          </section>
+          <div className="flex justify-center h-1/1">
+            <section>
+              <>
+                <a href="/images/tradgard2flipped.png">
+                  <Image
+                    priority
+                    src="/images/tradgard2flipped.png"
+                    className="float-left"
+                    width={367}
+                    height={500}
+                    layout="intrinsic"
+                    alt="hej"
+                  />
+                </a>
+              </>
+            </section>
+            <section>
+              <h1>About Me</h1>
+            </section>
+          </div>
           <h2>
               <Link href="/">
                   <a>back home</a>

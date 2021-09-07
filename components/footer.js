@@ -6,7 +6,7 @@ export default function Footer() {
   return (
       <footer className="bg-white py-8 w-full">
           <div className="container mx-auto px-8">
-              <div className="w-full flex justify-around">
+              <div className="w-full justify-around sm:flex flex-row">
                   <div className=" sm:table-cell">
                       <p className="uppercase text-grey text-m sm:mb-4">Links</p>
                       <ul className="list-reset text-xs mb-6">
@@ -58,6 +58,9 @@ export default function Footer() {
                      and
                     <a href="https://tailwindcss.com/docs" className="text-yellow-500"> TailwindCSS </a>
                   </p>
+                  <p className="text-xs">Images via
+                    <a href="https://unsplash.com/" className="text-yellow-500"> unsplash
+                    </a></p>
                   <p className="text-xs">Linnéa Olofsson 2021</p>
                 </div>
               </div>
