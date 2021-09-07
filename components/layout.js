@@ -32,7 +32,7 @@ export default function Layout({ children, home }) {
         <main className="relative h-screen w-screen">{children}</main>
         {/* If not at homepage, display back to home-link*/}
         {!home && (
-          <div className="my-4 ml-14">
+          <div className="my-4 ml-48">
             <Link href="/">
               <a>← Back to home</a>
             </Link>

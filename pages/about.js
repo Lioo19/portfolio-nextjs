@@ -11,8 +11,8 @@ export default function AboutMe() {
               <title>About Me</title>
           </Head>
           <div className="relative h-screen w-screen">
-            <div className="flex justify-center items-center flex-col sm:flex-row">
-              <section className="pr-8 py-4">
+            <div className="flex justify-center items-center flex-col pt-8 sm:flex-row">
+              <section className="pr-8">
                 <>
                   <a href="/images/tradgard2flipped.png">
                     <Image
@@ -27,11 +27,17 @@ export default function AboutMe() {
                   </a>
                 </>
               </section>
-              <section className="p-4">
-                <div className="w-1/1 flex flex-col bg-yellow-200 px-12 py-32">
-                  <div className="">
-                    <h1 className="text-3xl">About Me</h1>
-                    <p>Born in 1993, currently {myAge} years old and raised in Stockholm, Sweden</p>
+              <section className="p-6">
+                <div className="w-1/1 flex flex-col bg-yellow-100 px-10 py-14">
+                  <div className="max-w-xs">
+                    <h1 className="text-3xl pb-2">About Me</h1>
+                    <p><b>Age:</b> {myAge} years old.</p>
+                    <p><b>Hometown:</b> Stockholm, Sweden.</p>
+                    <p><b>Hobbies:</b> Games (board-, card- and videogames),
+                    crocheting, aerial hoop, listening to podcasts about
+                    communication and psychology.</p>
+                    <p><b>Current Project:</b> Preserving flowers to put in a frame. Oh, and this website.</p>
+                    <p><b>Current Haircolor:</b> Purple.</p>
                   </div>
                 </div>
               </section>
