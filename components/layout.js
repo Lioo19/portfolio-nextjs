@@ -32,7 +32,7 @@ export default function Layout({ children, home }) {
         <main className="relative h-screen w-full box-border overflow-y-auto">{children}</main>
         {/* If not at homepage, display back to home-link*/}
         {!home && (
-          <div className="mb-4 ml-48">
+          <div className="mb-4 mt-1 ml-2  sm:ml-48">
             <Link href="/">
               <a>← Back to home</a>
             </Link>
