@@ -29,10 +29,10 @@ export default function Layout({ children, home }) {
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
         {/*Main-component with relative screen size as default*/}
-        <main className="relative h-screen w-screen">{children}</main>
+        <main className="relative h-screen w-screen flex-1 overflow-y-auto">{children}</main>
         {/* If not at homepage, display back to home-link*/}
         {!home && (
-          <div className="my-4 ml-48">
+          <div className="my-4 ml-48 md: ml-10">
             <Link href="/">
               <a>← Back to home</a>
             </Link>

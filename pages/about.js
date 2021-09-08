@@ -18,7 +18,7 @@ export default function AboutMe() {
                     <Image
                       priority
                       src="/images/tradgard2flipped.png"
-                      className="float-left"
+                      className="absolute"
                       width={367}
                       height={500}
                       layout="intrinsic"
@@ -28,7 +28,7 @@ export default function AboutMe() {
                 </>
               </section>
               <section className="p-4">
-                <div className="w-1/1 flex flex-col bg-yellow-100 px-10 py-14">
+                <div className="aboslute w-1/1 flex flex-col bg-yellow-100 px-10 py-14">
                   <div className="max-w-xs">
                     <h1 className="text-3xl pb-2">About Me</h1>
                     <p><b>Age:</b> {myAge} years old.</p>

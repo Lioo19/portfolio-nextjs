@@ -4,10 +4,10 @@ import { github, linkedin, messenger } from './iconlinks.js'
 
 export default function Footer() {
   return (
-      <footer className="bg-white py-8 w-full">
-          <div className="container mx-auto px-8 ">
-              <div className="w-full justify-around sm:flex flex-row">
-                  <div className=" sm:table-cell">
+      <footer className="bg-white py-6 w-full">
+          <div className="container mx-auto px-8">
+              <div className="w-full justify-around sm:flex flex-row block">
+                  <div className="sm:table-cell">
                       <p className="uppercase text-grey text-m sm:mb-4">Links</p>
                       <ul className="list-reset text-xs mb-6">
                           <li className="mt-3 inline-block mr-2 sm:block sm:mr-0">
@@ -32,6 +32,9 @@ export default function Footer() {
                           </li>
                           <li className="mt-3 inline-block mr-2 sm:block sm:mr-0">
                               <a href="/contact" className="text-grey hover:opacity-60">Contact</a>
+                          </li>
+                          <li className="mt-3 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="/portfolio" className="text-grey hover:opacity-60">Portfolio</a>
                           </li>
                       </ul>
                   </div>

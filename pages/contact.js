@@ -27,7 +27,7 @@ export default function Contact() {
                   <p className="mt-6 text-lg sm:text-xl text-white">
                     Want to send me a message? Feel free to use the form below!
                   </p>
-                <ContactForm></ContactForm>
+                  <ContactForm></ContactForm>
               </div>
             </div>
             <Link href="/">
