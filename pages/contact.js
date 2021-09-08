@@ -12,7 +12,7 @@ export default function Contact() {
               <title>Contact me</title>
           </Head>
           <Header></Header>
-          <main className="relative h-screen w-screen">
+          <div className="relative h-screen wfull">
             <img
             src="https://source.unsplash.com/random"
             alt="main backgorund image"
@@ -33,7 +33,7 @@ export default function Contact() {
             <Link href="/">
                 <a>back home</a>
             </Link>
-          </main>
+          </div>
           <Footer></Footer>
       </>
   )

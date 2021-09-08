@@ -5,8 +5,8 @@ import { github, linkedin, messenger } from './iconlinks.js'
 export default function Footer() {
   return (
       <footer className="bg-white py-6 w-full">
-          <div className="container mx-auto px-8">
-              <div className="w-full justify-around sm:flex flex-row block">
+          <div className="container mx-auto px-8 box-border">
+              <div className="w-full justify-around sm:flex flex-row box-border">
                   <div className="sm:table-cell">
                       <p className="uppercase text-grey text-m sm:mb-4">Links</p>
                       <ul className="list-reset text-xs mb-6">

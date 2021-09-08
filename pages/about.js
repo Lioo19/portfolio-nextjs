@@ -10,7 +10,7 @@ export default function AboutMe() {
           <Head>
               <title>About Me</title>
           </Head>
-          <div className="relative h-screen w-screen">
+          <div className="relative h-screen w-full">
             <div className="flex justify-center items-center flex-col pt-8 sm:flex-row">
               <section className="px-4">
                 <>
@@ -28,7 +28,7 @@ export default function AboutMe() {
                 </>
               </section>
               <section className="p-4">
-                <div className="aboslute w-1/1 flex flex-col bg-yellow-100 px-10 py-14">
+                <div className="w-1/1 flex flex-col bg-yellow-100 px-10 py-14">
                   <div className="max-w-xs">
                     <h1 className="text-3xl pb-2">About Me</h1>
                     <p><b>Age:</b> {myAge} years old.</p>

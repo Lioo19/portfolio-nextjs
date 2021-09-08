@@ -11,8 +11,8 @@ export const siteTitle = 'Linnéa Olofsson, Developer';
 export default function Layout({ children, home }) {
   return (
     <>
+      {/*Always include header*/}
       <Header></Header>
-      <div className="">
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -28,17 +28,16 @@ export default function Layout({ children, home }) {
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
-        {/*Main-component with relative screen size as default*/}
-        <main className="relative h-screen w-screen flex-1 overflow-y-auto">{children}</main>
+        {/*Main-component with relative screen size as default + overflow y for scroll*/}
+        <main className="relative h-screen w-full box-border overflow-y-auto">{children}</main>
         {/* If not at homepage, display back to home-link*/}
         {!home && (
-          <div className="my-4 ml-48 md: ml-10">
+          <div className="mb-4 ml-48">
             <Link href="/">
               <a>← Back to home</a>
             </Link>
           </div>
         )}
-      </div>
       {/*Always include footer*/}
     <Footer>
     </Footer>
