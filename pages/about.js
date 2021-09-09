@@ -11,7 +11,7 @@ export default function AboutMe() {
               <title>About Me</title>
           </Head>
           <div className="relative h-screen w-full">
-            <div className="flex justify-center items-center flex-col pt-8 sm:flex-row">
+            <div className="flex flex-col justify-center items-center pt-8 sm:flex-row">
               <section className="px-4">
                 <>
                   <a href="/images/tradgard2flipped.png">

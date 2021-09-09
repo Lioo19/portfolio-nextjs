@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind forms;
+
+:root {
+    --primary: #367ee9;
+    --secondary: #a0aec0;
+    --accent: #718096;
+    --background: #fff;
+    --main: #0d0106;
+    --header: #2d3748;
+    --baseyellow: #fbbf24;
+    --darkyellow: #d97706;
+}
+
+.theme-light {
+    --background: #fff;
+    --main: #0d0106;
+    --header: #0e141b;
+}
+
+.theme-light {
+    --background: #0e141b;
+    --main: #ffffff;
+    --header: #eaeaea;
+}

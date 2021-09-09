@@ -15,10 +15,10 @@ export default function Header() {
         <Head>
           <script defer src="https://kit.fontawesome.com/7d1c7e7747.js"></script>
         </Head>
-        <nav className='flex items-center flex-wrap bg-white-400 text-yellow-400 px-3 py-2'>
+        <nav className='flex items-center flex-wrap bg-white-400 text-baseyellow px-3 py-2'>
           <Link href='/'>
             <a className='px-1 py-2 inline-flex items-center p-2 mr-4'>
-              <i aria-hidden className="pr-2 fas fa-angle-double-right text-lg leading-lg text-yellow-400 opacity-75"></i>
+              <i aria-hidden className="pr-2 fas fa-angle-double-right text-lg leading-lg text-baseyellow opacity-75"></i>
               <span className='text-xl font-semibold tracking-wide'>
                 Linnéa olofsson
               </span>

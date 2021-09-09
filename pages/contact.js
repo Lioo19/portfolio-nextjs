@@ -21,7 +21,7 @@ export default function Contact() {
 
             <div className="absolute inset-0 flex justify-center items-center">
               <div className="w-full max-w-md backdrop-filter backdrop-blur-md backdrop-grayscale backdrop-brightness-75 sm:rounded-2xl text:white py-12 px-4 sm:px-8">
-                <h1 className="text-center text-3xl uppercase sm:text-4xl text-yellow-400 font-extrabold sm:leading-[1rem]">
+                <h1 className="text-center text-3xl uppercase sm:text-4xl text-baseyellow font-extrabold sm:leading-[1rem]">
                  contact me
                 </h1>
                   <p className="mt-6 text-lg sm:text-xl text-white">
