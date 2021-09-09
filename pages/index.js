@@ -23,11 +23,11 @@ export default function Home({ allPortfolioData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className="relative h-screen w-full pt-10">
-        <section className="h-full bg-white bg-opacity-50 flex-row items-center text-center">
+      <div className=" w-full pt-10">
+        <section className="bg-yellow-100 text-center mx-10 mb-12 mt-1 rounded">
           <h1 className="pt-16 pb-1 text-4xl font-bold opacity-75">Linnéa Olofsson</h1>
           <h2 className="pb-10 pt-1 text-8xl font-bold text-baseyellow opacity-75">Developer</h2>
-          <p className=" text-xl italic">~In profession and in life</p>
+          <p className="pb-16 text-xl italic">~In profession and in life</p>
         </section>
         <section className="flex justify-around items-center pb-10 h-72 text-center">
           <div className="h-full w-1/4 bg-baseyellow pt-16">
