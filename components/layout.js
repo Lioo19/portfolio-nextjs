@@ -31,13 +31,13 @@ export default function Layout({ children, home }) {
         {/*Main-component with relative screen size as default + overflow y for scroll*/}
         <main className="relative h-screen w-full box-border overflow-y-auto">{children}</main>
         {/* If not at homepage, display back to home-link*/}
-        {!home && (
+        {/*}{!home && (
           <div className="mb-4 mt-1 ml-2  sm:ml-48">
             <Link href="/">
               <a>← Back to home</a>
             </Link>
           </div>
-        )}
+      )}*/}
       {/*Always include footer*/}
     <Footer>
     </Footer>
