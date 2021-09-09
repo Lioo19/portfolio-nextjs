@@ -10,7 +10,7 @@ export default function AboutMe() {
               <title>Portfolio</title>
           </Head>
 
-          <div className="flex justify-center h-1/1">
+          <div className="h-screen flex justify-center h-1/1">
             <section className="p-4 md:p-8">
               <div className="w-1/1 flex flex-col text-center px-2">
                 <h1 className="text-4xl">Portfolio</h1>
