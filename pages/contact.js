@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Layout from '../components/layout'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import ContactForm from '../components/contactform'
+import ContactForm from '../components/functions/contactform'
 
 export default function Contact() {
   return (
