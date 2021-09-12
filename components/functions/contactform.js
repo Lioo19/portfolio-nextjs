@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import { useState } from 'react'
+import Link from 'next/link';
+import Head from 'next/head';
+import { useState } from 'react';
 
 export default function contactForm() {
     const [name, setName]           = useState('');

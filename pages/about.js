@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import Layout from '../components/layout'
-import { myAge } from '../components/functions/currentage'
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import Layout from '../components/layout';
+import { myAge } from '../components/functions/currentage';
 
 export default function AboutMe() {
   return (
@@ -44,5 +44,5 @@ export default function AboutMe() {
             </div>
           </div>
       </Layout>
-  )
-}
+  );
+};

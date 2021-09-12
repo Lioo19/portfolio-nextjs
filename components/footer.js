@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { siteTitle } from './layout.js'
-import { github, linkedin, messenger } from './iconlinks.js'
+import Link from 'next/link';
+import { siteTitle } from './layout.js';
+import { github, linkedin, messenger } from './iconlinks.js';
 
 export default function Footer() {
   return (
@@ -69,5 +69,5 @@ export default function Footer() {
               </div>
           </div>
       </footer>
-  )
-}
+  );
+};

@@ -1,14 +1,10 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPortfolioData } from '../lib/posts'
-import Hero from '../components/hero'
-import Verticalswitch from '../components/verticalswitch'
-import Date from '../components/functions/date'
-import ContactForm from '../components/functions/contactform'
-import Layout, { siteTitle } from '../components/layout'
-
+import Head from 'next/head';
+import Image from 'next/image';
+import Hero from '../components/hero';
+import Verticalswitch from '../components/verticalswitch';
+import ContactForm from '../components/functions/contactform';
+import Layout, { siteTitle } from '../components/layout';
+import { getSortedPortfolioData } from '../lib/posts';
 
 export async function getStaticProps() {
   const allPortfolioData = getSortedPortfolioData();
@@ -16,8 +12,8 @@ export async function getStaticProps() {
     props: {
       allPortfolioData
     }
-  }
-}
+  };
+};
 
 export default function Home({ allPortfolioData }) {
   return (
@@ -35,5 +31,5 @@ export default function Home({ allPortfolioData }) {
         </section>
       </div>
     </Layout>
-  )
-}
+ );
+};

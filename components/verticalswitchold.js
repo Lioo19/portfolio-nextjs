@@ -1,5 +1,3 @@
-
-
 export default function VerticalSwitch () {
   return (
       <section className="flex justify-around items-center pb-10 h-72 text-center">
@@ -19,5 +17,5 @@ export default function VerticalSwitch () {
           </a>
         </div>
       </section>
-  )
-}
+  );
+};

@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
-import Header from './header'
-import Footer from './footer'
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import Header from './header';
+import Footer from './footer';
+import utilStyles from '../styles/utils.module.css';
 
 const name = 'Linnéa';
 export const siteTitle = 'Linnéa Olofsson, Developer';
@@ -41,5 +41,5 @@ export default function Layout({ children, home }) {
       {/*Always include footer*/}
       <Footer></Footer>
     </>
-  )
-}
+  );
+};

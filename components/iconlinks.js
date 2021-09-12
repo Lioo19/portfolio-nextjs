@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import Head from 'next/head'
+import Link from 'next/link';
+import Head from 'next/head';
 
 
 function messenger() {
@@ -12,8 +12,8 @@ function messenger() {
         <i aria-hidden className="fab fa-facebook-messenger pr-2 text-lg leading-lg text-black opacity-75"></i> Messenger
       </a>
     </>
-  )
-}
+  );
+};
 
 function github() {
   return (
@@ -25,8 +25,8 @@ function github() {
         <i aria-hidden className="fab fa-github pr-2 text-lg leading-lg text-black opacity-75"></i> Github
       </a>
     </>
-  )
-}
+  );
+};
 
 function linkedin() {
   return (
@@ -38,7 +38,7 @@ function linkedin() {
         <i aria-hidden className="fab fa-linkedin pr-2 text-lg leading-lg text-black opacity-75"></i> LinkedIn
       </a>
     </>
-  )
-}
+  );
+};
 
-export { github, linkedin, messenger }
+export { github, linkedin, messenger };

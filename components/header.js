@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import IconLinks from './iconlinks.js'
-import { siteTitle } from './layout.js'
-import { useState } from 'react'
+import Link from 'next/link';
+import Head from 'next/head';
+import IconLinks from './iconlinks.js';
+import { siteTitle } from './layout.js';
+import { useState } from 'react';
 
 export default function Header() {
   const [active, setActive] = useState(false);
@@ -73,5 +73,5 @@ export default function Header() {
           </div>
         </nav>
       </>
-  )
-}
+  );
+};
