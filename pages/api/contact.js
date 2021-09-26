@@ -1,4 +1,3 @@
-
 export default function (req, res) {
     require('dotenv').config();
     const password = process.env.password;

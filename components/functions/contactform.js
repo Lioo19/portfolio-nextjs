@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
-export default function contactForm() {
+
+export default function ContactForm() {
     const [name, setName]           = useState('');
     const [email, setEmail]         = useState('');
     const [message, setMessage]     = useState('');

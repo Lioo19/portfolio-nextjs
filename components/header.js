@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import IconLinks from './iconlinks.js';
-import { siteTitle } from './layout.js';
+import IconLinks from './IconLinks.js';
+import { siteTitle } from './Layout.js';
 import { useState } from 'react';
 
 export default function Header() {

@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout from '../components/layout';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import ContactForm from '../components/functions/contactform';
+import Layout from '../components/Layout';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ContactForm from '../components/functions/ContactForm';
 
 export default function Contact() {
   return (

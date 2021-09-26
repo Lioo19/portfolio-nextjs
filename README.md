@@ -1,4 +1,5 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+
+Run npm install
 
 
 If you should want to implement and build upon this repo, you also need:
@@ -6,3 +7,4 @@ If you should want to implement and build upon this repo, you also need:
     burnermail: sending email-address  
     personalmail: receiving email-address  
     password: password for burnermail  
+    recaptchasitekey: sitekey for ReCAPTCHA

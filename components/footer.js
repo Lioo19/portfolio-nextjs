@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { siteTitle } from './layout.js';
-import { github, linkedin, messenger } from './iconlinks.js';
+import { siteTitle } from './Layout.js';
+import { github, linkedin, messenger } from './IconLinks';
 
 export default function Footer() {
   return (

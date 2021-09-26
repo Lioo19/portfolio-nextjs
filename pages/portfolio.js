@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 export default function AboutMe() {
   return (
@@ -9,7 +9,6 @@ export default function AboutMe() {
           <Head>
               <title>Portfolio</title>
           </Head>
-
           <div className="h-screen flex justify-center h-1/1">
             <section className="p-4 md:p-8">
               <div className="w-1/1 flex flex-col text-center px-2">

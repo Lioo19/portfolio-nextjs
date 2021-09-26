@@ -1,21 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Hero from '../components/hero';
-import Verticalswitch from '../components/verticalswitch';
-import ContactForm from '../components/functions/contactform';
-import Layout, { siteTitle } from '../components/layout';
-import { getSortedPortfolioData } from '../lib/posts';
+import Hero from '../components/Hero';
+import Verticalswitch from '../components/VerticalSwitch';
+import ContactForm from '../components/functions/ContactForm';
+import Layout, { siteTitle } from '../components/Layout';
 
-export async function getStaticProps() {
-  const allPortfolioData = getSortedPortfolioData();
-  return {
-    props: {
-      allPortfolioData
-    }
-  };
-};
 
-export default function Home({ allPortfolioData }) {
+export default function Home() {
   return (
     <Layout home>
       <Head>
