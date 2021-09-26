@@ -1,29 +1,29 @@
 Portfolio Site
 =======
-### *for Linnéa Olofsson*  
+## *for Linnéa Olofsson*  
 
-#### Overview
+### Overview
 This project is build with [NextJS](https://nextjs.org/docs) and [TailwindCSS](https://tailwindcss.com/docs).
 The main goal of this project is to create a portfolio-page for myself, with a side goal of practising React/Javascript. The decision to use NextJS came from pure curiosity, as did tailwindCSS, with a pretty solid result. It took some time getting used to how to use TailwindCSS in a way that doesn't make the files all too clunky (and there's still some work left to do), but it's a nice tool to create smaller pages.
 
 This project will be ongoing and grow dynamically as time passes.
 
-#### In the pipeline
+### In the pipeline
 Upcoming features for this projects includes:
 - full implementation of ReCAPTCHA
 - Updated styling
 - linking to actual resume in PDF-form
 - splitting components to smaller parts
 
-#### Forking and implementing
+### Forking and implementing
 If you should want to implement and build upon this repo, you will need to do the following steps:
 - run npm install
 - Create the following environment variables in a .env-file  
-    burnermail: sending email-address  
-    personalmail: receiving email-address  
-    password: password for burnermail  
-    recaptchasitekey: sitekey for ReCAPTCHA
+    *burnermail*: sending email-address  
+    *personalmail*: receiving email-address  
+    *password*: password for burnermail  
+    *recaptchasitekey*: sitekey for ReCAPTCHA
 
 
 
-To run the site locally, use command **npm run dev**
+To run the site locally, use command *npm run dev*
