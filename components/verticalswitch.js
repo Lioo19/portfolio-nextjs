@@ -1,4 +1,4 @@
-import VerticalRow from './VerticalRow';
+import VerticalRow from './verticalrow';
 
 export default function VerticalSwitch () {
   return (

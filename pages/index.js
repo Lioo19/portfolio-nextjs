@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Hero from '../components/Hero';
-import Verticalswitch from '../components/VerticalSwitch';
-import ContactForm from '../components/functions/ContactForm';
-import Layout, { siteTitle } from '../components/Layout';
+import Hero from '../components/hero';
+import Verticalswitch from '../components/verticalswitch';
+import ContactForm from '../components/functions/contactform';
+import Layout, { siteTitle } from '../components/layout';
 
 
 export default function Home() {

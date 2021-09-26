@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import Header from './Header';
-import Footer from './Footer';
+import Header from './header';
+import Footer from './footer';
 import utilStyles from '../styles/utils.module.css';
 
 const name = 'Linnéa';
