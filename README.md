@@ -1,5 +1,6 @@
 
-Run npm install
+#### Here, there'll be plenty of text soon
+Just not right now
 
 
 If you should want to implement and build upon this repo, you also need:
@@ -8,3 +9,6 @@ If you should want to implement and build upon this repo, you also need:
     personalmail: receiving email-address  
     password: password for burnermail  
     recaptchasitekey: sitekey for ReCAPTCHA
+
+
+  To run the site locally, use command **npm run dev**

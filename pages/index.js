@@ -16,8 +16,11 @@ export default function Home() {
         <Hero></Hero>
         <Verticalswitch></Verticalswitch>
         <section>
-          <div className="flex flex-row justify-center bg-baseyellow rounded py-10 my-24">
-            <ContactForm></ContactForm>
+          <div className="bg-baseyellow py-10 my-24">
+            <p className="mt-6 text-lg sm:text-xl text-white text-center">Want to come in contact? Go ahead</p>
+            <div className="flex flex-row justify-center rounded ">
+              <ContactForm></ContactForm>
+            </div>
           </div>
         </section>
       </div>
