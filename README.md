@@ -23,7 +23,7 @@ If you should want to implement and build upon this repo, you will need to do th
     *burnermail*: sending email-address  
     *personalmail*: receiving email-address  
     *password*: password for burnermail  
-    *recaptchasitekey*: sitekey for ReCAPTCHA
+    *recaptchasitekey*: sitekey for ReCAPTCHA (not yet used)
 
 
 

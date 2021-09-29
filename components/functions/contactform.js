@@ -95,7 +95,7 @@ export default function ContactForm() {
       <button
         className={`${
             submitted ? 'hidden' : ''
-        } bg-yellow-400 text-gray-900 px-4 py-2 font-medium sm:text-lg rounded-tr rounded-br`}
+        } bg-baseyellow text-main px-4 py-2 font-medium sm:text-lg rounded-tr rounded-br`}
         onClick={(e) => {handleSubmit(e)}}
         type="submit"
         >

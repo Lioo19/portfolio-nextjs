@@ -7,13 +7,17 @@
     --primary: #367ee9;
     --secondary: #a0aec0;
     --accent: #718096;
-    --background: #fff;
+    --background: #ffffff;
     --main: #0d0106;
     --header: #2d3748;
     --baseyellow: #fbbf24;
+    --lighterbaseyellow: #fac53c;
     --darkyellow: #d97706;
+    --lighttext: #ffffff;
+    --darktext: #0d0106;
 }
 
+/* Not yet used */
 .theme-light {
     --background: #fff;
     --main: #0d0106;

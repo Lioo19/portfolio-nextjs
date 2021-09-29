@@ -21,7 +21,7 @@ export default function VerticalSwitch () {
       <VerticalRow
         title="Curious about who I am?"
         description="There's an entire page for that, just a simple click away."
-        image="/images/liliane-limpens-unsplash.jpg"
+        image="/images/felipe-correia-unsplash.jpg"
         imageAlt="Beige abstract image of two lines colliding at 90 degrees"
         href="/about"
         reverse
